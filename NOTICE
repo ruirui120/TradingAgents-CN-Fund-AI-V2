@@ -1,0 +1,15 @@
+TradingAgents-CN-Fund-AI V2
+Copyright 2026 ruirui120 and contributors
+
+This product includes software derived from TradingAgents-CN:
+https://github.com/hsliuping/TradingAgents-CN
+
+TradingAgents-CN itself is based on TradingAgents:
+https://github.com/TauricResearch/TradingAgents
+
+Only components covered by the Apache License 2.0 were selected for this
+standalone repository. The proprietary app/ and frontend/ components from
+TradingAgents-CN are not included.
+
+All original copyright and attribution notices remain applicable to their
+respective portions. See LICENSE for the full Apache License 2.0 text.

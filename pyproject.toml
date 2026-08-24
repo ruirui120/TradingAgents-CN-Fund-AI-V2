@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tradingagents-cn-fund-ai"
+version = "2.0.0"
+description = "中国公募基金证据型研究、历史情景预测与多 Agent 审查工具"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "TradingAgents-CN-Fund-AI contributors"}]
+dependencies = [
+    "akshare>=1.17.86",
+    "openai>=1.0.0,<2.0.0",
+    "pandas>=2.0.0",
+    "pydantic>=2.0.0,<3.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+china-fund-advisor = "tradingagents.funds.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tradingagents*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/funds"]
